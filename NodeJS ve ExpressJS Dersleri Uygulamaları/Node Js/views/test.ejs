@@ -1,0 +1,11 @@
+<%- include ('partials/header') -%>
+
+<p>parametre : <%= testparameter.toUpperCase() %></p>
+
+<% if(testparameter.toLowerCase()==="mersin"){ %>
+    <p>Mersin güzel seçim</p>
+<% } else{ %>
+    <p>Tamam diğer şehirlerde güzel</p> 
+    <% } %>
+
+<%- include ('partials/footer') -%>

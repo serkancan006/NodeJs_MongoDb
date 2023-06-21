@@ -1,0 +1,67 @@
+.input-field{
+    border: none;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+    height: 30px;
+    width: 90%;
+    margin: 5px;
+    font-style: italic;
+    font-weight: bold;
+}
+.btn{
+    border: none;
+    border-radius: 10px 10px 10px 10px;
+    background-color: aqua;
+    color: black;
+    height: 30px;
+    width: 20%;
+    margin: 5px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.btn:hover{
+    background-color: #e73c7e;
+}
+.form{
+    padding: 50px;
+    background-image: url('https://images.unsplash.com/photo-1657524432718-042ae15e4b8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
+    background-color: lightgray;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px 10px 10px 10px;
+    border: 3px black solid;
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    text-align: center;
+    width: 30%;
+    height: 60%;
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-shadow: 2px 2px 4px #000000;
+    text-transform: uppercase;
+}
+.form p{
+    color: white;
+    font-size: xx-small;
+    text-transform: lowercase;
+}
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

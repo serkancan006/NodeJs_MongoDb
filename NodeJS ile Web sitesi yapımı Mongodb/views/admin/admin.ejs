@@ -1,0 +1,35 @@
+<%- include ('../partials/header') -%>
+ <!-- Page Header-->
+ <header class="masthead" style="background-image: url('https://images.unsplash.com/photo-1657161706943-f2ebfe95bf69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>Admin Dashboard</h1>
+                    <span class="subheading">This is what I do.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<% adminActions.forEach( (action)=>{  %>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <button id="<%=action.actionId %>" onclick="catchID(this.id)" style="width:300px; height:50px;" class="btn-primary"><%=action.displayName %></button>
+        </div>
+    </div>
+    <% }); %>
+</div>
+<script>
+    function catchID(clicked_id) {
+        alert(clicked_id +"numaralı butona tıklandı");
+        if(clicked_id == 1){
+            window.location.href='changeHomeImage'; return false;
+        }
+        if(clicked_id == 4){
+            window.location.href='addNewBlog'; return false;
+        }
+    };
+</script>
+<%- include ('../partials/footer') -%>

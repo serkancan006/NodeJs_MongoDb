@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "url": "^0.11.0"
+  },
+  "name": "nodejs-html-module",
+  "version": "1.0.0",
+  "description": "nodejs ögreniyorum",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "serkancan",
+  "license": "ISC"
+}

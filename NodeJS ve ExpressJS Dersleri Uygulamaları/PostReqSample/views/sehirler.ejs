@@ -1,0 +1,9 @@
+<h1>Ziyaret ettiğim Şehirler</h1>
+<% sehirler.forEach(function(sehir){ %>
+     <li> <%= sehir %> </li> 
+    <% }); %>
+
+    <form action="/sehirEkle" method="post">
+        <input type="text" name="yenisehir" placeholder="Sehir" id="">
+        <button>Yeni Sehir Ekle</button>
+    </form>
